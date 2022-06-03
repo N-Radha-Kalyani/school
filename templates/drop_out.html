@@ -4,7 +4,7 @@
     {% include "base.html" %}
     <center><h1>{{title}}</h1></center>
     <form method="post">{% csrf_token %}
-    {{form}}
+    {{form.as_p}}
     <button type="submit">Dropout</button>
 </form>
 </body>
