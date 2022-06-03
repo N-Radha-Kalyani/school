@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    {% include "base.html" %}
+    <center><h1>{{title}}</h1></center>
+    <form method="post">{% csrf_token %}
+    {{form}}
+    <button type="submit">Dropout</button>
+</form>
+</body>
+</html>
